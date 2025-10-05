@@ -161,15 +161,7 @@ export default function Home() {
 
         <motion.div 
           className="absolute bottom-10 right-10 w-min whitespace-nowrap flex flex-row gap-2 z-10"
-        >
-          <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
-            <Link href="/products" className="flex justify-center items-center w-full sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#1d1754] hover:after:opacity-100 hover:after:scale-[2.5] bg-indigo-600 border-transparent hover:border-[#4c00ff15]">
-              <span className="relative z-10 text-white">
-                Our Products
-              </span>
-            </Link>
-          </motion.div>
-          
+        >          
           <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
             <Link href="/about" className="flex justify-center items-center w-full sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#1d1754] hover:after:opacity-100 hover:after:scale-[2.5] bg-white dark:bg-zinc-900 border-transparent hover:border-[#4c00ff15]">
               <span className="relative z-10 text-zinc-900 dark:text-white hover:text-white">
