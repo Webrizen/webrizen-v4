@@ -1,5 +1,7 @@
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/providers/theme-provider";
+import Navbar from "@/components/system/navbar";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -62,7 +64,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${bricolage.className} antialiased`} suppressHydrationWarning>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+          >
+          <Navbar />
           {children}
+          </ThemeProvider>
       </body>
     </html>
   );
