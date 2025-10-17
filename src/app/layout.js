@@ -1,7 +1,6 @@
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
-import Navbar from "@/components/system/navbar";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -19,7 +18,7 @@ export const metadata = {
   authors: [{ name: "Webrizen" }],
   creator: "Webrizen",
   publisher: "Webrizen",
-  
+
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -36,7 +35,7 @@ export const metadata = {
       },
     ],
   },
-  
+
   twitter: {
     card: "summary_large_image",
     title: "Webrizen - Building Intelligence Into Everything",
@@ -44,7 +43,7 @@ export const metadata = {
     images: ["/og-image.jpg"],
     creator: "@webrizen",
   },
-  
+
   robots: {
     index: true,
     follow: true,
@@ -65,13 +64,12 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={`${bricolage.className} antialiased`} suppressHydrationWarning>
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-          >
-          <Navbar />
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+        >
           {children}
-          </ThemeProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
