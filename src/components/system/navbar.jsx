@@ -240,7 +240,7 @@ export default function Navbar() {
             <header className="fixed md:top-10 inset-x-0 z-50 h-18 flex items-center pointer-events-none">
                 <div className="mx-auto container w-full px-5 sm:px-10 md:px-12 lg:px-5 h-full items-center">
                     <nav className="flex justify-between items-center h-full">
-                        <div className="flex min-w-max items-center pointer-events-auto">
+                        <div className="flex min-w-max items-center pointer-events-auto backdrop-blur-3xl rounded-full">
                             <Link href="/" className="flex items-center gap-x-2 md:text-2xl font-semibold text-gray-700 dark:text-gray-300">
                                 <Image src={Logo} alt="Webrizen Logo" className="md:h-8 h-5 w-auto" width={100} height={100} placeholder="blur" />
                                 Webrizen
