@@ -59,7 +59,7 @@ export default async function page({ params }) {
             <nav className="border-b border-gray-100 dark:border-gray-800 backdrop-blur-sm bg-white/80 dark:bg-black/80">
                 <div className="max-w-4xl mx-auto px-6 py-6">
                     <Link 
-                        href="/projects"
+                        href="/products"
                         className="inline-flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-300 group"
                     >
                         <svg className="w-4 h-4 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

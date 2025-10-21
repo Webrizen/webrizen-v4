@@ -24,13 +24,13 @@ export default async function page({ params }) {
             <nav className="border-b border-zinc-100 dark:border-zinc-800 backdrop-blur-sm bg-white/80 dark:bg-black/80">
                 <div className="max-w-4xl mx-auto px-6 py-6">
                     <Link 
-                        href="/blog"
+                        href="/blogs"
                         className="inline-flex items-center gap-3 text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300 group"
                     >
                         <svg className="w-4 h-4 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                         </svg>
-                        Back to Journal
+                        Back to Blogs
                     </Link>
                 </div>
             </nav>
